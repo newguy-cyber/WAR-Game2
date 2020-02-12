@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>War Card Game</title>
-     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link href="css/cardstarter.css" rel="stylesheet">
     <script defer src="js/main.js"></script>
 </head>
 <body>
     <h1>WAR</h1>
     <ul>
-    <h4>RULES<h4>
-    <li>Each player is dealt 26 cards face down</li>
-    <li>Each player will draw a card from their deck at the same time.</li>
-    <li>If the players draw a card with same vaule they will have to draw four more cards,</br> who ever has the highest vaule of the fourth card will determine who wins that deck of cards.</li>
-    <li>The player who runs out of cards first will lose the match.</li>
-    </ul>  
+        <h6>RULES<h6>
+        <li>Each player is dealt 26 cards face down</li>
+        <li>Each player will draw a card from their deck at the same time.</li>
+        <li>If the players draw a card with same vaule they will have to draw four more cards,</br> who ever has the highest vaule of the fourth card will determine who wins that deck of cards.</li>
+        <li>The player who runs out of cards first will lose the match.</li>
+    </ul>
+    <div id="player-one-starting-deck" class="card back-red large no-border"></div>
+    <div id="player-one-draw-card" class="card large"></div>
+    </br>
+    <div id="player-two-starting-deck" class="card back-red large no-border"></div>
+    <div id="player-two-draw-deck" class="card large"></div>
+    <button id="button" class="btn btn-danger">Draw!</button>
+
 </body>
 </html>
