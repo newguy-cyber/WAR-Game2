@@ -14,7 +14,7 @@ const displayPile2 = document.getElementById('pile-two');
 const player1Draw = document.getElementById('flipped-pile-one');
 const player2Draw = document.getElementById('flipped-pile-two');
 /*----- event listeners -----*/
-btn.addEventListener('click', dealer);
+btn.addEventListener('click',);
 /*----- functions -----*/
 init();
 function init() {
@@ -24,13 +24,15 @@ function init() {
     pileOneVaules = [];
     pileTwoValues = [];
     render();
+    dealer();
 }
 function render() {
     displayPile1.classList.add('back-red', 'no-border');
     displayPile2.classList.add('back-red', 'no-border');
-    player1Draw.className('card', 'large');
-    player2Draw.className('card', 'large');
+    player1Draw.className = 'card large';
+    player2Draw.className = 'card large';
 }
+//(dealer) function will divided the deck into two random decks.
 function dealer() {
     if(cards.length === 52) {
         for (let i = 0; i < 26; i ++) {
@@ -45,12 +47,3 @@ function dealer() {
         console.log(pileTwoValues,'grabing an index from the random array');
         }
  }
- dealer();
-//get rndIdx first within the length of card arr.
-//rndIdx = Math.floor(Math.random() * cards.length);
-// cards.splice(rndIdx, 1)
-//the line above will take a one vaule out of the card arr.
-//push line 32 into pile one.
-//repeat line 29 through line 33, 26 times.
-// take the rest of cards of the arr and put in pile two.
-//that will give two decks with 26 cards in each deck.
