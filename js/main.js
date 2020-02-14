@@ -103,6 +103,7 @@ function getScore() {
             msg.textContent = 'player 2 won war'
             p2Cards.push(warCards1[0],warCards1[1],warCards1[2],warCards1[3],warCards2[0],warCards2[1],warCards2[2],warCards2[3])
         }
+        shuffle();
     } 
     console.log(warCards1);
     console.log(p1Cards, p2Cards);

@@ -17,7 +17,7 @@ link to game ![alt text](https://newguy-cyber.github.io/WAR-Game2/)
 - player who run out of cards first loses.
 ---
 ## Wire Fram 
-![alt text](https://imgur.com/fM6KPTm)
+(https://imgur.com/a/j4t8Z9x)
 ## Technologies Used
 
 - JavaScript
@@ -31,7 +31,6 @@ link to game ![alt text](https://newguy-cyber.github.io/WAR-Game2/)
 ## Credits
 
 - Bootstrap
-- Animations.css
 ---
 ## Icebox items
 
