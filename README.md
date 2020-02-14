@@ -5,6 +5,8 @@ Deigned by Jose Gonzalez
 
 War is card game played by two players, at the beginning of the game player will be dealt two random stacks of cards and will draw their cards at the same time.  "War" happens when the players draw a card with same value, each player must then draw 4 more cards and the player with greatest value for the  fourth card determine who will win the hand of war. For a player to win war, A players must have all the cards in the deck.
 
+link to game (https://newguy-cyber.github.io/WAR-Game2/)
+
 ## Technologies Used
 
 - JavaScript
@@ -25,4 +27,3 @@ War is card game played by two players, at the beginning of the game player will
 - Add sound effects
 - Add a second row of cards to display when war begins.
 - Change the style of cards.
-- 
