@@ -5,7 +5,7 @@ Deigned by Jose Gonzalez
 
 War is card game played by two players, at the beginning of the game player will be dealt two random stacks of cards and will draw their cards at the same time.  "War" happens when the players draw a card with same value, each player must then draw 4 more cards and the player with greatest value for the  fourth card determine who will win the hand of war. For a player to win war, A players must have all the cards in the deck.
 
-link to game (https://newguy-cyber.github.io/WAR-Game2/)
+link to game ![alt text](https://newguy-cyber.github.io/WAR-Game2/)
 ---
 ## Pseudocode
 
@@ -16,6 +16,8 @@ link to game (https://newguy-cyber.github.io/WAR-Game2/)
 - war-four more cards on draw and the fourth card determines who wins the draw, if war happens again the same action will occur.
 - player who run out of cards first loses.
 ---
+## Wire Fram 
+![alt text](https://imgur.com/fM6KPTm)
 ## Technologies Used
 
 - JavaScript
@@ -24,7 +26,7 @@ link to game (https://newguy-cyber.github.io/WAR-Game2/)
 ---
 ## ScreenShots
 
-(https://imgur.com/qWkEEA9)(https://imgur.com/qWkEEA9)
+![alt text](https://imgur.com/qWkEEA9)
 ---
 ## Credits
 
