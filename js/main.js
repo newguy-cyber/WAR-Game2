@@ -71,10 +71,19 @@ function flipCard() {
     console.log(p1Dealt, p2Dealt);
     console.log(compare1, compare2);
 }
-// function getScore() {
-//     compare1 > compare2;
-//     if flipCardOne > flipCardTwo;
-// }
+function getScore() {
+    if(compare1 > compare2) {
+        p1Cards.push(p1Dealt[0],p2Dealt[0])
+    } if(compare1 > compare2) {
+        p2Cards.push(p2Dealt[0],p2Dealt[0])
+    }
+}
+function CheckerForWinner() {
+    if(compare1 === compare2){
+        
+    }
+}
+
 function lookupValue(card) {
     if (card === "dA" || card === "cA" || card === "sA" || card === "hA") {
         return 14;
