@@ -9,6 +9,8 @@ let flipCardTwo = [];
 let cardToFlip = '';
 let p1Dealt = [];
 let p2Dealt = [];
+let compare1;
+let compare2;
 /*----- cached element references -----*/
 const btn = document.getElementById('button');
 const displayPile1 = document.getElementById('pile-one');
@@ -19,6 +21,7 @@ const player2Draw = document.getElementById('flipped-pile-two');
 btn.addEventListener('click',flipCard);
 /*----- functions -----*/
 init();
+//The init function will delcare the values inside the dealer funcution.
 function init() {
     cards = ["dA","dQ","dK","dJ","d10","d09","d08","d07","d06","d05","d04","d03","d02","hA","hQ","hK","hJ","h10","h09","h08","h07","h06","h05","h04","h03","h02","cA","cQ","cK","cJ","c10","c09","c08","c07","c06","c05","c04","c03","c02","sA","sQ","sK","sJ","s10","s09","s08","s07","s06","s05","s04","s03","s02"];
     player1Score = 0;
@@ -30,7 +33,6 @@ function init() {
     render();
     dealer();
 }
-//The init function will delcare the values inside the dealer funcution.
 function render() {
     displayPile1.classList.add('back-red', 'no-border');
     displayPile2.classList.add('back-red', 'no-border');
@@ -43,9 +45,11 @@ function dealer() {
         for (let i = 0; i < 26; i ++) {
             let rndIdx = Math.floor(Math.random() * cards.length);
             flipCardOne = cards.splice(rndIdx,1);
+            player1Draw.className = (`${flipCardOne} + large + card`)
             p1Cards.push(flipCardOne[0]);
             rndIdx = Math.floor(Math.random() * cards.length);
             flipCardTwo = cards.splice(rndIdx,1);
+            player2Draw.className = (`${flipCardTwo} + large + card`)
             p2Cards.push(flipCardTwo[0]);
         }
         console.log(p1Cards,'Grabing an index from the rndIdx array');
@@ -57,21 +61,19 @@ flipCard();
 function flipCard() {
     let rndIdx = Math.floor(Math.random() * p1Cards.length);
     cardToFlip = p1Cards.splice(rndIdx,1);
+    player1Draw.className = (`${cardToFlip} + large + card`)
+    compare1 = lookupValue(`${cardToFlip}`);
     p1Dealt.push(`${cardToFlip}`);
     rndIdx = Math.floor(Math.random() * p2Cards.length);
     cardToFlip = p2Cards.splice(rndIdx,1);
-    p2Dealt.push(`${cardToFlip}`);
-    // let compare1 = lookupValue(p1Dealt);
-    // let compare2 = lookupValue(p2Dealt); 
-
+    player2Draw.className = (`${cardToFlip} + large + card`)
+    compare2 = lookupValue(`${cardToFlip}`);
     console.log(p1Dealt, p2Dealt);
+    console.log(compare1, compare2);
 }
-// function compare1() {
-//     if(p1Dealt.length === 26) {
-//         for (let i = 0; i < 26; i ++){
-//             let 
-//         }
-//     }
+// function getScore() {
+//     compare1 > compare2;
+//     if flipCardOne > flipCardTwo;
 // }
 function lookupValue(card) {
     if (card === "dA" || card === "cA" || card === "sA" || card === "hA") {
