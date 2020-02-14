@@ -62,7 +62,7 @@ function flipCard() {
     cardToFlip = p2Cards.splice(rndIdx,1);
     p2Dealt.push(`${cardToFlip}`);
     // let compare1 = lookupValue(p1Dealt);
-    // let compare2 = lookupValue(p2Dealt);
+    // let compare2 = lookupValue(p2Dealt); 
 
     console.log(p1Dealt, p2Dealt);
 }
